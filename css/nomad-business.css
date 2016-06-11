@@ -4,9 +4,6 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-}
-
-body {
 	font-family: 'Lato', sans-serif;
 }
 
@@ -75,6 +72,41 @@ header.carousel .fill {
 }
 
 
+/*Participar*/
+
+.participar {
+	background-image: url(../img/mapa.jpg);
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: top;
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+
+.programas {
+	margin-top: 100px;
+}
+
+.programas p {
+	padding-top: 50px;
+	font-size: 24px;
+}
+
+.programas h2:before {
+	content: url(../img/left.png);
+	position: absolute;
+	top: -10px;
+	left: 0;
+}
+
+.programas h2:after {
+	content: url(../img/right.png);
+	position: absolute;
+	top: -10px;
+	right: 0;
+}
+
+
 /* 404 Page Styles */
 
 .error-404 {
@@ -109,20 +141,54 @@ footer {
 }
 
 
-/* Responsive Styles */
+/* Large desktops and laptops */
 
-@media(max-width:991px) {
+@media (min-width: 1200px) {}
+
+
+/* Landscape tablets and medium desktops */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Portrait tablets and small desktops */
+
+@media (min-width: 768px) and (max-width: 991px) {
 	.customer-img,
 	.img-related {
 		margin-bottom: 30px;
 	}
 }
 
-@media(max-width:767px) {
+
+/* Landscape phones and portrait tablets */
+
+@media (max-width: 767px) {
 	.img-portfolio {
 		margin-bottom: 15px;
 	}
 	header.carousel .carousel {
 		height: 70%;
+	}
+	.programas h2:before {
+		content: '';
+	}
+	.programas h2:after {
+		content: '';
+	}
+}
+
+
+/* Portrait phones and smaller */
+
+@media (max-width: 480px) {}
+
+
+/*Resuelve centrado en seccion home participar*/
+
+@media (min-width: 992px) {
+	.div-center .col-md-2 {
+		float: none;
+		display: inline-block;
 	}
 }
