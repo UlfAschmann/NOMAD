@@ -5,6 +5,7 @@ body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Lato', sans-serif;
+	font-size: 14px;
 }
 
 h1,
@@ -13,6 +14,7 @@ h3,
 h4 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .no-padding {
@@ -25,6 +27,37 @@ h4 {
 
 .img-hover:hover {
 	opacity: 0.8;
+}
+
+section {
+	padding: 80px 0;
+}
+
+.btn-nomad {
+	background: #c59614;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 0px;
+	letter-spacing: 2px;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.page-header {
+	border-bottom: none;
+}
+
+.color-blanco {
+	color: #fff;
+}
+
+.color-amarillo {
+	color: #c59614;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
 }
 
 
@@ -51,6 +84,28 @@ h4 {
 	padding: 10px 20px 10px 0;
 }
 
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+	background-color: transparent;
+}
+
+.navbar-toggle .icon-bar {
+	height: 3px;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+	background-color: #c59614;
+}
+
+.navbar-inverse .navbar-toggle:focus .icon-bar,
+.navbar-inverse .navbar-toggle:hover .icon-bar {
+	background-color: #fff;
+}
+
 
 /* Home Page Carousel */
 
@@ -72,6 +127,47 @@ header.carousel .fill {
 }
 
 
+/*Buscardor header*/
+
+header {
+	position: relative;
+}
+
+.buscador {
+	position: absolute;
+	bottom: 25%;
+	left: 17%
+}
+
+.buscador h2 {
+	color: #fff;
+}
+
+.buscador form {
+	padding: 5px;
+	background: #313035;
+}
+
+.buscador .form-control {
+	text-transform: uppercase;
+	border-radius: 0px;
+}
+
+.form-group input {
+	border-radius: 0px;
+}
+
+.btn-buscador {
+	background: #c59614;
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 0px;
+	letter-spacing: 2px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
 /*Participar*/
 
 .participar {
@@ -80,7 +176,55 @@ header.carousel .fill {
 	background-repeat: no-repeat;
 	background-position: top;
 	margin-top: 100px;
-	padding-bottom: 100px;
+	padding-bottom: 10%;
+}
+
+.participar .tabs {
+	background: #313035;
+}
+
+.tab-servicio {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.tab-servicio a {
+	color: #fff;
+}
+
+.tab-servicio a:hover {
+	color: #313035;
+}
+
+.nav-tabs.nav-justified>li>a {
+	border-radius: 0px;
+	border-bottom: none;
+}
+
+.pater {
+	font-size: 1px;
+	letter-spacing: -1px;
+	width: 100%;
+	/*o lo necesario*/
+	margin: auto;
+}
+
+.pater div a img:hover {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+
+.pater div {
+	display: inline-block;
+	word-spacing: normal;
+	font-size: 2rem;
+	/*u otra unidad para IE8 y -*/
+	letter-spacing: normal;
+	white-space: normal;
+	width: 16.6666667%;
+	/*El valor necesario*/
 }
 
 .programas {
@@ -96,14 +240,155 @@ header.carousel .fill {
 	content: url(../img/left.png);
 	position: absolute;
 	top: -10px;
-	left: 0;
+	left: -5px;
 }
 
 .programas h2:after {
 	content: url(../img/right.png);
 	position: absolute;
 	top: -10px;
-	right: 0;
+	right: -5px;
+}
+
+
+/*Proyectos destacados*/
+
+.proyectos h3 {
+	margin: 15px 0 0 0;
+}
+
+.proyectos .caption {
+	margin-bottom: 25px;
+}
+
+.proyectos .caption p {
+	font-size: 20px;
+	line-height: 1;
+}
+
+.proyectos .promo {
+	color: #c59614;
+	font-weight: 800;
+	text-transform: uppercase;
+}
+
+
+/*Carusel Espiritu*/
+
+#carousel-espiritu {
+	background: #cccccc;
+	padding: 20px 0;
+}
+
+.quote {
+	color: #c59614;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#fade-quote-carousel.carousel {
+	padding-bottom: 60px;
+}
+
+#fade-quote-carousel.carousel .carousel-inner .item {
+	opacity: 0;
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+}
+
+#fade-quote-carousel.carousel .carousel-inner .active {
+	opacity: 1;
+	-webkit-transition-property: opacity;
+	transition-property: opacity;
+}
+
+#fade-quote-carousel blockquote {
+	text-align: center;
+	border: none;
+	font-style: italic;
+	font-size: 24px;
+}
+
+#fade-quote-carousel .profile-circle {
+	width: 180px;
+	height: 180px;
+	margin: 0 auto;
+	border-radius: 100px;
+	border: 5px solid #c59614;
+	background-color: #ccc;
+}
+
+
+/*Experienca-Completa*/
+
+#experiencia-completa {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#experiencia-completa button {
+	background: transparent;
+	border: none;
+}
+
+#experiencia-completa button:focus {
+	outline: none;
+}
+
+
+/*Redes Nomad*/
+
+#redes {
+	margin-top: 100px;
+	padding-bottom: 100px;
+	background: url('../img/huella.png')no-repeat;
+}
+
+#redes h4 {
+	border-bottom: 2px solid #000;
+}
+
+#redes .segundo {
+	margin-top: 35px;
+}
+
+#redes .bloque {
+	border-bottom: 1px solid #333333;
+	margin-bottom: 10px;
+}
+
+.redes-titulo {
+	font-size: 18px;
+	font-weight: 800;
+	margin: 0px;
+}
+
+.redes-titulo:hover {
+	color: #333;
+	text-decoration: none;
+}
+
+.fecha-redes {
+	margin: 0px;
+	padding-bottom: 6px;
+}
+
+#redes h5 {
+	font-size: 17px;
+	font-weight: 600;
+	margin: 0px;
+}
+
+.redes-titulo-tw {
+	font-size: 18px;
+	margin: 0px;
+}
+
+#redes .bloque .fa-twitter,
+#redes .bloque .fa-check-circle,
+.liga-tw {
+	color: #1aa1d4;
 }
 
 
@@ -137,7 +422,49 @@ header.carousel .fill {
 /* Footer Styles */
 
 footer {
-	margin: 50px 0;
+	padding: 50px 0;
+	background: #313035;
+}
+
+footer h4 {
+	font-weight: 100;
+}
+
+footer form {
+	margin-bottom: 15px;
+}
+
+footer .form-inline .form-control {
+	width: 255px;
+}
+
+footer ul {
+	padding: 0px;
+}
+
+.news ul li:first-child a {
+	border-bottom: 1px solid #fff;
+}
+
+footer a {
+	margin: 0px;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+footer a:hover {
+	color: #ccc;
+}
+
+.direccion p {
+	color: #fff;
+	margin: 5px 0;
+}
+
+.direccion ul li {
+	display: inline-block;
+	padding-right: 10px;
+	margin-top: 10px;
 }
 
 
@@ -158,6 +485,13 @@ footer {
 	.img-related {
 		margin-bottom: 30px;
 	}
+	.buscador {
+		bottom: 25%;
+		left: 10%;
+	}
+	.pater div {
+		width: 25%;
+	}
 }
 
 
@@ -176,19 +510,29 @@ footer {
 	.programas h2:after {
 		content: '';
 	}
+	.buscador {
+		bottom: 10%;
+		left: 2%;
+	}
+	.pater div {
+		width: 25%;
+	}
 }
 
 
 /* Portrait phones and smaller */
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+	.buscador {
+		bottom: 10%;
+		left: 0%;
+	}
+	.pater div {
+		width: 50%;
+	}
+}
 
 
 /*Resuelve centrado en seccion home participar*/
 
-@media (min-width: 992px) {
-	.div-center .col-md-2 {
-		float: none;
-		display: inline-block;
-	}
-}
+@media (min-width: 992px) {}
