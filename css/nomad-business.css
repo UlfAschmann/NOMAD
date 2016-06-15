@@ -30,7 +30,7 @@ h4 {
 }
 
 section {
-	padding: 80px 0;
+	padding: 70px 0;
 }
 
 .btn-nomad {
@@ -60,11 +60,84 @@ a {
 	text-decoration: none;
 }
 
+.fondo-imagen {
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 45%;
+}
+
+.intro-texto {
+	padding: 8.5vw;
+	text-align: center;
+}
+
+.filtro {
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, .2);
+}
+
+.programas h2:before,
+.general h2:before {
+	content: url(../img/left.png);
+	position: absolute;
+	top: -10px;
+	left: -5px;
+}
+
+.programas h2:after,
+.general h2:after {
+	content: url(../img/right.png);
+	position: absolute;
+	top: -10px;
+	right: -5px;
+}
+
+.general h2 {
+	padding: 0 60px;
+}
+
+.general p {
+	padding-top: 50px;
+	font-size: 24px;
+}
+
+.border-right {
+	border-right: 1px solid #ccc;
+}
+
 
 /*Header con logo desaparece en tablet y mobile*/
 
 .header {
 	min-height: 83px;
+	padding-top: .8vw
+}
+
+.header p {
+	margin: 0px;
+}
+
+.header ul {
+	padding: 0px;
+	padding-top: 11px;
+}
+
+.header li {
+	display: inline-block;
+	padding-right: 4px;
+	list-style: none;
+}
+
+.header td {
+	border-left: 1px solid #000;
+	padding: 2px 10px;
+	vertical-align: middle;
+}
+
+.header td:first-child {
+	border-left: none;
 }
 
 
@@ -72,7 +145,6 @@ a {
 
 .navbar {
 	position: relative;
-	min-height: 50px;
 	margin-bottom: 0px;
 	border-radius: 0px;
 	border: 1px solid transparent;
@@ -81,7 +153,6 @@ a {
 .nav>li>a {
 	position: relative;
 	display: block;
-	padding: 10px 20px 10px 0;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -231,23 +302,11 @@ header {
 	margin-top: 100px;
 }
 
+.programas h2 {}
+
 .programas p {
 	padding-top: 50px;
 	font-size: 24px;
-}
-
-.programas h2:before {
-	content: url(../img/left.png);
-	position: absolute;
-	top: -10px;
-	left: -5px;
-}
-
-.programas h2:after {
-	content: url(../img/right.png);
-	position: absolute;
-	top: -10px;
-	right: -5px;
 }
 
 
@@ -392,6 +451,39 @@ header {
 }
 
 
+/*QuieneSomos Page*/
+
+.crew-back {
+	background: url('../img/huella.png')no-repeat;
+	background-size: contain;
+	background-position: right;
+}
+
+.crew {
+	text-align: center;
+	margin-bottom: 30px
+}
+
+.crew h3,
+.crew h4 {
+	margin: 0px;
+	padding-top: 10px;
+}
+
+.crew h3 {
+	font-size: 20px;
+}
+
+.crew .profile-circle {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+	border-radius: 250px;
+	border: 5px solid #c59614;
+	background-color: #ccc;
+}
+
+
 /* 404 Page Styles */
 
 .error-404 {
@@ -504,10 +596,12 @@ footer a:hover {
 	header.carousel .carousel {
 		height: 70%;
 	}
-	.programas h2:before {
+	.programas h2:before,
+	.general h2:before {
 		content: '';
 	}
-	.programas h2:after {
+	.programas h2:after,
+	.general h2:after {
 		content: '';
 	}
 	.buscador {
