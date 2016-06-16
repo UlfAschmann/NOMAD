@@ -142,22 +142,105 @@
 			<!-- Project One -->
 			<div class="row">
 				<div class="col-md-3">
+					<div class="" id="sticky">
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1" class="sr-only">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<label for="exampleInputPassword1">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							</div>
 
+							<div class="checkbox">
+								<label>
+									<input type="checkbox"> Check me out
+								</label>
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+
+					</div>
 				</div>
-				<div class="col-md-9 no-padding">
-					<div class="col-md-4">
-						<a href="portfolio-item.html">
-							<img class="img-responsive img-hover" src="http://placehold.it/520x520" alt="">
-						</a>
+				<div class="col-md-9 border-left">
+					<div class="row resultado">
+						<div class="col-md-4 col-sm-4 ">
+							<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/900x600" alt="">
+							</a>
+						</div>
+						<div class="col-md-5 col-sm-5">
+							<h2>Project One Project One</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde. <a href="" class="color-amarillo">[...]</a>
+							</p>
+						</div>
+						<div class="col-md-3 col-sm-3 costo">
+							<h4>Proyecto animal</h4>
+							<p>8 días</p>
+							<h5>Desde $8,450 <span>mxn</span></h5>
+							<a class="btn btn-buscador" href="#">Ver más</a>
+						</div>
 					</div>
-					<div class="col-md-5">
-						<h3>Project One</h3>
-						<h4>Subheading</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
+
+					<div class="row resultado">
+						<div class="col-md-4 col-sm-4 ">
+							<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/900x600" alt="">
+							</a>
+						</div>
+						<div class="col-md-5 col-sm-5">
+							<h2>Project One Project One</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde. <a href="" class="color-amarillo">[...]</a>
+							</p>
+						</div>
+						<div class="col-md-3 col-sm-3 costo">
+							<h4>Proyecto animal</h4>
+							<p>8 días</p>
+							<h5>Desde $8,450 <span>mxn</span></h5>
+							<a class="btn btn-buscador" href="#">Ver más</a>
+						</div>
 					</div>
-					<div class="col-md-3">
-						<a class="btn btn-primary" href="portfolio-item.html">View Project</i></a>
+
+					<div class="row resultado">
+						<div class="col-md-4 col-sm-4 ">
+							<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/900x600" alt="">
+							</a>
+						</div>
+						<div class="col-md-5 col-sm-5">
+							<h2>Project One Project One</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde. <a href="" class="color-amarillo">[...]</a>
+							</p>
+						</div>
+						<div class="col-md-3 col-sm-3 costo">
+							<h4>Proyecto animal</h4>
+							<p>8 días</p>
+							<h5>Desde $8,450 <span>mxn</span></h5>
+							<a class="btn btn-buscador" href="#">Ver más</a>
+						</div>
 					</div>
+
+					<div class="row resultado">
+						<div class="col-md-4 col-sm-4 ">
+							<a href="portfolio-item.html">
+								<img class="img-responsive img-hover" src="http://placehold.it/900x600" alt="">
+							</a>
+						</div>
+						<div class="col-md-5 col-sm-5">
+							<h2>Project One Project One</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde. <a href="" class="color-amarillo">[...]</a>
+							</p>
+						</div>
+						<div class="col-md-3 col-sm-3 costo">
+							<h4>Proyecto animal</h4>
+							<p>8 días</p>
+							<h5>Desde $8,450 <span>mxn</span></h5>
+							<a class="btn btn-buscador" href="#">Ver más</a>
+						</div>
+					</div>
+
+
 				</div>
 
 			</div>
@@ -213,14 +296,26 @@
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
 
-	<!-- Script to Activate the Carousel -->
 	<script>
-		$('.carousel').carousel({
-			interval: 5000 //changes the speed
-		})
-		$(function () {
-			$('[data-toggle="popover"]').popover()
-		})
+		var baseTop = $("div#sticky").offset().top;
+		if (screen.width >= 992) {
+			$(window).scroll(function () {
+				var top = $(window).scrollTop();
+				if (top >= baseTop) {
+					$("div#sticky").css({
+						"position": "fixed",
+						"top": "15px",
+						"width": "262.5px"
+					});
+				} else if (top < baseTop) {
+					$("div#sticky").css({
+						"position": "",
+						"top": "",
+						"width": ""
+					});
+				}
+			});
+		}
 	</script>
 
 </body>

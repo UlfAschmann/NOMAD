@@ -107,6 +107,10 @@ a {
 	border-right: 1px solid #ccc;
 }
 
+.border-left {
+	border-left: 1px solid #ccc;
+}
+
 
 /*Header con logo desaparece en tablet y mobile*/
 
@@ -484,6 +488,38 @@ header {
 }
 
 
+/*Resultado de busqueda*/
+
+.resultado {
+	margin-bottom: 10px;
+}
+
+.resultado h2 {
+	margin: 0px;
+	padding-bottom: 10px
+}
+
+.resultado h4 {
+	margin: 0px;
+}
+
+.resultado .costo p {
+	font-size: 20px;
+	margin: 0px;
+}
+
+.resultado .costo h5 {
+	font-size: 20px;
+	font-weight: 800;
+	padding-bottom: 30px;
+	margin: 0px;
+}
+
+.resultado .costo span {
+	text-transform: uppercase;
+}
+
+
 /* 404 Page Styles */
 
 .error-404 {
@@ -584,6 +620,16 @@ footer a:hover {
 	.pater div {
 		width: 25%;
 	}
+	.border-right {
+		border-right: none;
+	}
+	.border-left {
+		border-left: none;
+	}
+	.filtro {
+		background: #000;
+		z-index: 2;
+	}
 }
 
 
@@ -611,6 +657,16 @@ footer a:hover {
 	.pater div {
 		width: 25%;
 	}
+	.border-right {
+		border-right: none;
+	}
+	.border-left {
+		border-left: none;
+	}
+	.resultado {
+		padding-bottom: 20px;
+		border-bottom: 1px solid #ccc;
+	}
 }
 
 
@@ -623,6 +679,12 @@ footer a:hover {
 	}
 	.pater div {
 		width: 50%;
+	}
+	.border-right {
+		border-right: none;
+	}
+	.border-left {
+		border-left: none;
 	}
 }
 
