@@ -22,6 +22,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,400italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
+
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -144,21 +145,39 @@
 				<div class="col-md-3">
 					<div class="" id="sticky">
 						<form>
-							<div class="form-group">
-								<label for="exampleInputEmail1" class="sr-only">Email address</label>
-								<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+							<div class="form-group ">
+								<label>Tipo de voluntario</label>
+								<select class="form-control">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
 							</div>
-							<div class="form-group">
-								<label for="exampleInputPassword1">Password</label>
-								<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+							<div class="form-group ">
+								<label>Destino</label>
+								<select class="form-control">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+								</select>
 							</div>
-
-							<div class="checkbox">
-								<label>
-									<input type="checkbox"> Check me out
-								</label>
+							<div class="form-group ">
+								<label for="fechas">Fechas de salida</label>
+								<input type="date" id="fechas" class="form-control">
 							</div>
-							<button type="submit" class="btn btn-default">Submit</button>
+							<div class="form-group ">
+								<label for="duracion">Duración</label>
+								<input type="range" name="duracion" id="duracion" min="0" max="100">
+							</div>
+							<div class="form-group ">
+								<label>Precio</label>
+								<input type="range" name="precio" id="precio" min="0" max="100">
+							</div>
+							<button type="submit" class="btn btn-nomad">Buscar</button>
 						</form>
 
 					</div>
@@ -296,6 +315,8 @@
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.min.js"></script>
 
+
+
 	<script>
 		var baseTop = $("div#sticky").offset().top;
 		if (screen.width >= 992) {
@@ -317,6 +338,7 @@
 			});
 		}
 	</script>
+
 
 </body>
 

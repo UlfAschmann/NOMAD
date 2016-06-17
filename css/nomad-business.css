@@ -5,7 +5,7 @@ body {
 	height: 100%;
 	width: 100%;
 	font-family: 'Lato', sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 }
 
 h1,
@@ -109,6 +109,14 @@ a {
 
 .border-left {
 	border-left: 1px solid #ccc;
+}
+
+.bg-gris {
+	background: #ccc;
+}
+
+.distancia-media {
+	padding: 40px 0 60px 0;
 }
 
 
@@ -228,7 +236,8 @@ header {
 	border-radius: 0px;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
 	border-radius: 0px;
 }
 
@@ -399,6 +408,22 @@ header {
 	outline: none;
 }
 
+#experiencia-completa2 .container {
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-size: auto;
+	padding: 100px 0;
+}
+
+#experiencia-completa2 button {
+	background: transparent;
+	border: none;
+}
+
+#experiencia-completa2 button:focus {
+	outline: none;
+}
+
 
 /*Redes Nomad*/
 
@@ -519,6 +544,62 @@ header {
 	text-transform: uppercase;
 }
 
+#sticky {
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+#sticky label {
+	text-transform: uppercase;
+}
+
+
+/*Single de  Proyectos*/
+
+.single-left {
+	margin-bottom: 20px;
+}
+
+.single-left p {
+	margin-bottom: 25px;
+	letter-spacing: .5px;
+}
+
+.single-left .itinerario {
+	padding-top: 25px;
+}
+
+.single-left .panel-group .panel-heading {
+	padding: 5px;
+}
+
+.single-left .panel-group a {
+	display: block;
+	line-height: 2;
+	text-decoration: none;
+	position: relative;
+}
+
+.single-left .panel-group a:hover,
+.single-left .panel-group a:focus {
+	color: #C59614;
+}
+
+.single-left i {
+	position: absolute;
+	right: 12px;
+	top: 22%;
+}
+
+.single-left a[aria-expanded="true"] i {
+	-webkit-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+.panel-nomad {
+	border-bottom: 1px solid #ccc;
+}
+
 
 /* 404 Page Styles */
 
@@ -630,6 +711,9 @@ footer a:hover {
 		background: #000;
 		z-index: 2;
 	}
+	#sticky {
+		border-bottom: 1px solid #ccc;
+	}
 }
 
 
@@ -667,6 +751,9 @@ footer a:hover {
 		padding-bottom: 20px;
 		border-bottom: 1px solid #ccc;
 	}
+	#sticky {
+		border-bottom: 1px solid #ccc;
+	}
 }
 
 
@@ -685,6 +772,9 @@ footer a:hover {
 	}
 	.border-left {
 		border-left: none;
+	}
+	#sticky {
+		border-bottom: 1px solid #ccc;
 	}
 }
 
