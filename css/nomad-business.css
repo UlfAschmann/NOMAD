@@ -189,6 +189,34 @@ a {
 	background-color: #fff;
 }
 
+.yamm .nav,
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+	position: static;
+}
+
+.yamm .container {
+	position: relative;
+}
+
+.yamm .dropdown-menu {
+	left: auto;
+	background: #313035;
+	color: #CCCCCC;
+	border-top: 1px solid #fff;
+	border-radius: 0px;
+}
+
+.yamm .yamm-content {
+	padding: 20px 30px;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu {
+	left: 0;
+	right: 0;
+}
+
 
 /* Home Page Carousel */
 
@@ -598,6 +626,15 @@ header {
 
 .panel-nomad {
 	border-bottom: 1px solid #ccc;
+}
+
+.unidad-icono {
+	padding: 5px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.unidad-icono:last-child {
+	border-bottom: none;
 }
 
 
