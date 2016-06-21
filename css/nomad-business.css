@@ -17,6 +17,10 @@ h4 {
 	text-transform: uppercase;
 }
 
+p {
+	line-height: 1.6
+}
+
 .no-padding {
 	padding: 0px;
 }
@@ -267,6 +271,7 @@ header {
 .form-group input,
 .form-group select {
 	border-radius: 0px;
+	background
 }
 
 .btn-buscador {
@@ -284,10 +289,11 @@ header {
 
 .participar {
 	background-image: url(../img/mapa.jpg);
-	background-size: auto;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: top;
-	margin-top: 100px;
+	background-attachment: fixed;
+	padding-top: 100px;
 	padding-bottom: 10%;
 }
 
@@ -456,7 +462,7 @@ header {
 /*Redes Nomad*/
 
 #redes {
-	margin-top: 100px;
+	padding-top: 100px;
 	padding-bottom: 100px;
 	background: url('../img/huella.png')no-repeat;
 }
@@ -584,6 +590,41 @@ header {
 
 /*Single de  Proyectos*/
 
+.imagenes {
+	margin-bottom: 20px;
+}
+
+#singleCarousel .carousel-indicators {
+	bottom: 0;
+	left: 10px;
+	margin-left: 5px;
+	width: 100%;
+}
+
+#singleCarousel .carousel-indicators li {
+	border: medium none;
+	border-radius: 0;
+	float: left;
+	height: 44px;
+	margin-bottom: 5px;
+	margin-left: 0;
+	margin-right: 5px !important;
+	margin-top: 0;
+	width: 100px;
+}
+
+#singleCarousel .carousel-indicators img {
+	border: 2px solid #FFFFFF;
+	float: left;
+	height: 44px;
+	left: 0;
+	width: 100px;
+}
+
+#singleCarousel .carousel-indicators .active img {
+	border: 2px solid #39b3d7;
+}
+
 .single-left {
 	margin-bottom: 20px;
 }
@@ -635,6 +676,58 @@ header {
 
 .unidad-icono:last-child {
 	border-bottom: none;
+}
+
+
+/*Blog y Blog-Post*/
+
+.post-relacionados .btn-nomad {
+	margin-top: 20px;
+}
+
+.single-post {
+	background-repeat: no-repeat;
+	background-position: top right;
+	background-size: auto;
+	line-height: 1.6;
+}
+
+
+/*Eventos*/
+
+.evento h2,
+.evento h3 {
+	margin: 0px;
+}
+
+.evento h3,
+.evento h4 {
+	font-weight: 400;
+	text-transform: none;
+}
+
+.evento p {
+	text-align: left;
+	font-size: 17px
+}
+
+.evento a {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.evento {
+	text-align: center;
+	margin: 10px 0px;
+}
+
+.evento:last-child:after {
+	content: " ";
+}
+
+.evento:after {
+	content: url(../img/flechas.png);
+	padding-left: 48.5%;
 }
 
 
@@ -751,6 +844,12 @@ footer a:hover {
 	#sticky {
 		border-bottom: 1px solid #ccc;
 	}
+	.abstand {
+		margin-top: 10px;
+	}
+	.evento:after {
+		padding-left: 47.5%;
+	}
 }
 
 
@@ -791,6 +890,9 @@ footer a:hover {
 	#sticky {
 		border-bottom: 1px solid #ccc;
 	}
+	.abstand {
+		margin-top: 10px;
+	}
 }
 
 
@@ -813,9 +915,7 @@ footer a:hover {
 	#sticky {
 		border-bottom: 1px solid #ccc;
 	}
+	.evento:after {
+		padding-left: 45%;
+	}
 }
-
-
-/*Resuelve centrado en seccion home participar*/
-
-@media (min-width: 992px) {}
