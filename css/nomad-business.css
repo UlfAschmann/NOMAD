@@ -2,10 +2,10 @@
 
 html,
 body {
-	height: 100%;
-	width: 100%;
 	font-family: 'Lato', sans-serif;
 	font-size: 15px;
+	height: 100%;
+	width: 100%;
 }
 
 h1,
@@ -22,7 +22,7 @@ p {
 }
 
 .no-padding {
-	padding: 0px;
+	padding: 0;
 }
 
 .img-portfolio {
@@ -39,12 +39,12 @@ section {
 
 .btn-nomad {
 	background: #c59614;
+	border-radius: 0;
 	color: #fff;
-	text-transform: uppercase;
-	border-radius: 0px;
 	letter-spacing: 2px;
 	padding-left: 7%;
 	padding-right: 7%;
+	text-transform: uppercase;
 }
 
 .page-header {
@@ -65,8 +65,8 @@ a {
 }
 
 .fondo-imagen {
-	background-repeat: no-repeat;
 	background-position: center center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	height: 45%;
 }
@@ -77,25 +77,26 @@ a {
 }
 
 .filtro {
+	background: #000;
+	background: rgba(0, 0, 0, .2);
 	height: 100%;
 	width: 100%;
-	background: rgba(0, 0, 0, .2);
 }
 
 .programas h2:before,
 .general h2:before {
 	content: url(../img/left.png);
+	left: -5px;
 	position: absolute;
 	top: -10px;
-	left: -5px;
 }
 
 .programas h2:after,
 .general h2:after {
 	content: url(../img/right.png);
 	position: absolute;
-	top: -10px;
 	right: -5px;
+	top: -10px;
 }
 
 .general h2 {
@@ -103,8 +104,8 @@ a {
 }
 
 .general p {
-	padding-top: 50px;
 	font-size: 24px;
+	padding-top: 50px;
 }
 
 .border-right {
@@ -120,7 +121,8 @@ a {
 }
 
 .distancia-media {
-	padding: 40px 0 60px 0;
+	padding-top: 40px;
+	padding-bottom: 60px;
 }
 
 
@@ -132,18 +134,18 @@ a {
 }
 
 .header p {
-	margin: 0px;
+	margin: 0;
 }
 
 .header ul {
-	padding: 0px;
+	padding: 0;
 	padding-top: 11px;
 }
 
 .header li {
 	display: inline-block;
-	padding-right: 4px;
 	list-style: none;
+	padding-right: 4px;
 }
 
 .header td {
@@ -160,10 +162,10 @@ a {
 /*Navbar*/
 
 .navbar {
-	position: relative;
-	margin-bottom: 0px;
 	border-radius: 0px;
 	border: 1px solid transparent;
+	position: relative;
+	margin-bottom: 0px;
 }
 
 .nav>li>a {
@@ -731,6 +733,53 @@ header {
 }
 
 
+/*Embajadores*/
+
+.embajadores form {
+	margin-bottom: 15px;
+}
+
+.embajadores h2 {
+	margin-bottom: 40px;
+}
+
+
+/*Press Room*/
+
+.bloque-press h2 {
+	margin-bottom: 25px
+}
+
+.press {
+	margin-bottom: 15px;
+}
+
+.multimedia p {
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+
+.multimedia-contact p {
+	font-size: 22px;
+	margin: 0px;
+	line-height: 1;
+}
+
+.espacio {
+	margin-bottom: 20px
+}
+
+.espacio ul {
+	padding: 0px;
+}
+
+.espacio li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 10px;
+}
+
+
 /* 404 Page Styles */
 
 .error-404 {
@@ -901,7 +950,7 @@ footer a:hover {
 @media (max-width: 480px) {
 	.buscador {
 		bottom: 10%;
-		left: 0%;
+		left: 0;
 	}
 	.pater div {
 		width: 50%;
