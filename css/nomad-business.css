@@ -314,7 +314,7 @@ header {
 
 .buscador {
 	position: absolute;
-	bottom: 25%;
+	top: 28vw;
 	left: 17%
 }
 
@@ -842,6 +842,42 @@ header {
 }
 
 
+/*Grupos corp.*/
+
+.grupo {
+	background: url('../img/huella.png')no-repeat;
+	background-size: auto;
+	background-position: right top;
+}
+
+.grupo p {
+	font-size: 20px;
+	margin-bottom: 20%
+}
+
+.espacio-titulo {
+	margin-bottom: 3vw;
+}
+
+.proyectos-corp .carousel-control.left,
+.carousel-control.right {
+	background-image: none !important;
+	opacity: 1;
+}
+
+.proyectos-corp .carousel-control.left {
+	top: 95%;
+}
+
+.proyectos-corp .carousel-control.right {
+	top: 95%;
+}
+
+.proyectos-cont {
+	padding: 2vw 0;
+}
+
+
 /* 404 Page Styles */
 
 .error-404 {
@@ -1028,5 +1064,11 @@ footer a:hover {
 	}
 	.evento:after {
 		padding-left: 45%;
+	}
+	.proyectos-corp .carousel-control.left {
+		top: 40%;
+	}
+	.proyectos-corp .carousel-control.right {
+		top: 40%;
 	}
 }
