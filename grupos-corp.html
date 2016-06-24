@@ -152,13 +152,13 @@
 					<img src="http://lorempixel.com/1900/450/animals/2" alt="Slide3">
 				</div>
 			</div>
-			<a class="left carousel-control" href="#carouselProyecto" data-slide="prev"><span class="fa fa-chevron-left fa-2x"></span></a>
-			<a class="right carousel-control" href="#carouselProyecto" data-slide="next"><span class="fa fa-chevron-right fa-2x"></span></a>
+			<a class="left carousel-control" href="#carouselProyecto" data-slide="prev"><span class="fa fa-angle-left fa-4x"></span></a>
+			<a class="right carousel-control" href="#carouselProyecto" data-slide="next"><span class="fa fa-angle-right fa-4x"></span></a>
 		</div>
-		<div class="bg-gris proyectos-cont">
+		<div class="bg-gris">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12" id="carousel-text">
+				<div class="row proyectos-cont">
+					<div class="col-md-10 col-md-offset-1" id="carousel-text">
 
 					</div>
 				</div>
@@ -168,22 +168,62 @@
 
 	<div id="slide-content" style="display: none;">
 		<div id="slide-content-0" class="proyectos-cont">
-			<div class="col-md-6">
-				<h2>Camino </h2>
+			<div class="col-md-5">
+				<h2>groupo inbursa</h2>
+				<h3>Voluntariado en chiapas</h3>
+				<h5>Abril 2016</h5>
 			</div>
-			<div class="col-md-6">
-				<h2>Camino </h2>
+			<div class="col-md-7 border-left-gris">
+				<h4 class="color-amarillo">Actividades</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro inventore quasi quia cumque et aspernatur, dignissimos assumenda? Repellendus porro, error at minus dignissimos eos aut architecto aliquid fugit, id, officia.</p>
+				<h4 class="color-amarillo">Logros</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium magnam modi ipsa eius at, molestias. Molestias reiciendis saepe commodi maiores, corporis culpa perspiciatis dolorum, accusantium, quod laudantium tempore. Ut!</p>
 			</div>
 
 		</div>
 		<div id="slide-content-1">
-			<h2>Camino 2</h2>
+			<div class="col-md-5">
+				<h2>kjdhkvcjhdzk2</h2>
+				<h3>Vofdz vfdxluntariado en chiapas</h3>
+				<h5>Abril 2016</h5>
+			</div>
+			<div class="col-md-7 border-left-gris">
+				<h4 class="color-amarillo">Actividades</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro inventore quasi quia cumque et aspernatur, dignissimos assumenda? Repellendus porro, error at minusfd vzfd vfd vdz b bvfdxz vos aut architecto aliquid fugit, id, officia.</p>
+				<h4 class="color-amarillo">Logros</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium magnam modi ipsa eius at, molestias. Molestias reiciendis saepe commodi maiores, corporis culpa perspiciatis dolorum, accusantium, quod laudantium tempore. Ut!</p>
+			</div>
 		</div>
 		<div id="slide-content-2">
-			<h2>Camino 3</h2>
+			<div class="col-md-5">
+				<h2>groupo inbursa 3</h2>
+				<h3>Voluntariado en chiapas</h3>
+				<h5>Abril 2016</h5>
+			</div>
+			<div class="col-md-7 border-left-gris">
+				<h4 class="color-amarillo">Actividades</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro inventore quasi quia cumque et aspernatur, dignissimos assumenda? Repellendus porro, error at minus dignissimos eos aut architecto aliquid fugit, id, officia.</p>
+				<h4 class="color-amarillo">Logros</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium magnam modi ipsa eius at, molestias. Molestias reiciendis saepe commodi maiores, corporis culpa perspiciatis dolorum, accusantium, quod laudantium tempore. Ut!</p>
+			</div>
 		</div>
 	</div>
 
+
+	<section>
+		<div class="container text-center">
+			<div class="row">
+				<h2>Nuestros aliados</h2>
+			</div>
+			<div class="row">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</section>
 
 
 	<footer>
@@ -244,7 +284,9 @@
 			// When the carousel slides, auto update the text
 			$('#carouselProyecto').on('slid.bs.carousel', function (e) {
 				var id = $('.item.active').data('slide-number');
-				$('#carousel-text').html($('#slide-content-' + id).html());
+				setTimeout(function () {
+					$('#carousel-text').hide().html($('#slide-content-' + id).html()).fadeIn(1000);
+				}, 500);
 			});
 		});
 	</script>

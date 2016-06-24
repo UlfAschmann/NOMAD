@@ -112,8 +112,16 @@ a {
 	border-right: 1px solid #ccc;
 }
 
+.border-right-gris {
+	border-right: 1px solid #333333;
+}
+
 .border-left {
 	border-left: 1px solid #ccc;
+}
+
+.border-left-gris {
+	border-left: 1px solid #333333;
 }
 
 .bg-gris {
@@ -846,13 +854,13 @@ header {
 
 .grupo {
 	background: url('../img/huella.png')no-repeat;
-	background-size: auto;
+	background-size: contain;
 	background-position: right top;
 }
 
 .grupo p {
 	font-size: 20px;
-	margin-bottom: 20%
+	margin-bottom: ;
 }
 
 .espacio-titulo {
@@ -866,15 +874,42 @@ header {
 }
 
 .proyectos-corp .carousel-control.left {
-	top: 95%;
+	top: 88%;
 }
 
 .proyectos-corp .carousel-control.right {
-	top: 95%;
+	top: 88%
 }
 
 .proyectos-cont {
-	padding: 2vw 0;
+	margin: 2vw 0;
+	min-height: 10vw;
+}
+
+.proyectos-cont h2 {
+	font-weight: normal;
+	font-size: 25px;
+	margin-top: 0;
+}
+
+.proyectos-cont h3 {
+	margin-top: 0;
+	font-size: 19px;
+	text-transform: none;
+}
+
+.proyectos-cont h4 {
+	margin: 0;
+	font-size: 16px
+}
+
+.proyectos-cont h5 {
+	font-size: 17px;
+}
+
+.proyectos-cont p {
+	font-size: 14px;
+	line-height: normal;
 }
 
 
@@ -1030,6 +1065,9 @@ footer a:hover {
 	.border-left {
 		border-left: none;
 	}
+	.border-left-gris {
+		border-left: none;
+	}
 	.resultado {
 		padding-bottom: 20px;
 		border-bottom: 1px solid #ccc;
@@ -1059,6 +1097,9 @@ footer a:hover {
 	.border-left {
 		border-left: none;
 	}
+	.border-left-gris {
+		border-left: none;
+	}
 	#sticky {
 		border-bottom: 1px solid #ccc;
 	}
@@ -1066,9 +1107,9 @@ footer a:hover {
 		padding-left: 45%;
 	}
 	.proyectos-corp .carousel-control.left {
-		top: 40%;
+		top: 43%;
 	}
 	.proyectos-corp .carousel-control.right {
-		top: 40%;
+		top: 43%;
 	}
 }
