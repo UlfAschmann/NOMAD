@@ -35,6 +35,7 @@ p {
 
 section {
 	padding: 70px 0;
+	position: relative;
 }
 
 .btn-nomad {
@@ -139,6 +140,39 @@ a:hover {
 .distancia-media {
 	padding-top: 40px;
 	padding-bottom: 60px;
+}
+
+.fade-out:after {
+	content: url(../img/PixelNomad.png);
+	background: rgba(255, 255, 255, 1);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(9%, rgba(255, 255, 255, 1)), color-stop(73%, rgba(255, 255, 255, 0.84)), color-stop(100%, rgba(255, 255, 255, 0)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 9%, rgba(255, 255, 255, 0.84) 73%, rgba(255, 255, 255, 0) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 9%, rgba(255, 255, 255, 0.84) 73%, rgba(255, 255, 255, 0) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+}
+
+.fade-in:before {
+	content: url(../img/PixelNomad.png);
+	background: rgba(255, 255, 255, 0);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(22%, rgba(255, 255, 255, 0.62)), color-stop(66%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.62) 22%, rgba(255, 255, 255, 1) 66%, rgba(255, 255, 255, 1) 100%);
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.62) 22%, rgba(255, 255, 255, 1) 66%, rgba(255, 255, 255, 1) 100%);
+	filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0);
+	color: red;
+	position: absolute;
+	top: -30px;
+	width: 100%;
+}
+
+.schatten-out {
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .5);
+}
+
+.schatten-in {
+	box-shadow: 0 -3px 5px 0 rgba(0, 0, 0, .5);
 }
 
 
@@ -333,7 +367,7 @@ header {
 
 .buscador {
 	position: absolute;
-	top: 28vw;
+	top: 24vw;
 	left: 17%
 }
 
@@ -578,10 +612,10 @@ textarea:-ms-input-placeholder {
 	outline: none;
 }
 
-#experiencia-completa2 .container {
-	background-position: center right;
+#experiencia-completa2 {
+	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: contain;
 	padding: 100px 0;
 }
 
@@ -598,9 +632,8 @@ textarea:-ms-input-placeholder {
 /*Redes Nomad*/
 
 #redes {
-	padding-top: 100px;
-	padding-bottom: 100px;
-	background: url('../img/huella.png')no-repeat;
+	background: url('../img/huella.png')no-repeat fixed;
+	background-size: contain;
 }
 
 #redes h4 {
@@ -655,7 +688,7 @@ textarea:-ms-input-placeholder {
 .crew-back {
 	background: url('../img/huella.png')no-repeat;
 	background-size: contain;
-	background-position: right;
+	background-attachment: fixed;
 }
 
 .crew {
@@ -823,8 +856,8 @@ textarea:-ms-input-placeholder {
 
 .single-post {
 	background-repeat: no-repeat;
-	background-position: top right;
-	background-size: auto;
+	background-size: contain;
+	background-attachment: fixed;
 	line-height: 1.6;
 }
 
@@ -932,7 +965,7 @@ textarea:-ms-input-placeholder {
 .grupo {
 	background: url('../img/huella.png')no-repeat;
 	background-size: contain;
-	background-position: right top;
+	background-attachment: fixed;
 }
 
 .grupo p {
@@ -1212,6 +1245,7 @@ footer a {
 	.buscador {
 		bottom: 10%;
 		left: 0;
+		padding: 0 15px;
 	}
 	.pater div {
 		width: 50%;
