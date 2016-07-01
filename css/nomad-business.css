@@ -1108,6 +1108,14 @@ footer a {
 }
 
 
+/*Modal*/
+
+.modal-body {
+	background: url(../img/huella.png);
+	background-repeat: no-repeat;
+}
+
+
 /* Large desktops and laptops */
 
 @media (min-width: 1200px) {}
